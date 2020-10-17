@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -7,8 +7,24 @@ import { Component } from '@angular/core';
     styleUrls: ['./title-bar.component.css']
   })
 
-export class TitlebarComponent{
+export class TitlebarComponent implements OnInit{
 
-  value = 'Clear me';
+  constructor(){
+
+  }
+
+  ngOnInit(){
+
+  }
+
+  search(){
+
+  }
+  sign_up(){
+
+  }
+  log_out(){
+    
+  }
 
 }

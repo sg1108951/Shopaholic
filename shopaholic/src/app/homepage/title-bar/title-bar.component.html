@@ -1,14 +1,23 @@
-<p>
-    <mat-toolbar>
-        <span>Shopaholic</span>
-        <span class="example-spacer"></span>
-        <button mat-button>Login</button>
-        <button mat-button>Logout</button>
-    </mat-toolbar>
+<div>
+    <div>
+        <mat-toolbar>
+            <span>Shopaholic</span>
+            <span class="example-spacer"></span>
+            <button mat-button (click)="sign_up()">Signup</button>
+            <button mat-button (click)="log_out()">Logout</button>
+            <div>
+                <input type="text" #txtFname (input)="search(txtFname.value)" placeholder="Search" />
+            </div>
 
-    <mat-tab-group mat-align-tabs="center" animationDuration="1500ms">
-        <mat-tab class="mat-tab-group" label="First">Content 1</mat-tab>
-        <mat-tab label="Second">Content 2</mat-tab>
-        <mat-tab label="Third">Content 3</mat-tab>
-      </mat-tab-group>
-</p>
+        </mat-toolbar>
+    </div>
+    <div>
+        <mat-tab-group mat-align-tabs="center" animationDuration="1500ms">
+            <mat-tab class="mat-tab-group" label="First">slab 1</mat-tab>
+            <mat-tab label="Second">slab 2</mat-tab>
+            <mat-tab label="Third">slab 3</mat-tab>
+        </mat-tab-group>
+    </div>
+
+
+</div>
