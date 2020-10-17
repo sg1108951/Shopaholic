@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 
 export class TitlebarComponent{
 
-    title : string = 'Shopaholic'
+  value = 'Clear me';
 
 }
