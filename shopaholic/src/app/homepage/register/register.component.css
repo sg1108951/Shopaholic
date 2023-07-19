@@ -13,3 +13,18 @@ table {
     font-size: large;
     border-collapse: collapse;
 }
+
+.Cancel{
+    text-align:start
+}
+
+.fab-wrapper {
+    width: 56px;
+    height: 56px;
+    position: relative;
+    top: 36px;
+    left: calc(50% - 36px);
+    padding: 8px;
+    border-radius: 36px;
+    background-color: white;
+  }

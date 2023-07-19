@@ -1,41 +1,53 @@
-<div class="register">
-    <div>
-        <table>
-            <thead>
+<form #userPost="ngForm">
+    <div class="register">
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th [attr.colspan]="3" class="size">
+                            Registration
+                        </th>
+                    </tr>
+                </thead>
                 <tr>
-                    <th [attr.colspan]="3" class="size">
-                        Registration
-                    </th>
+                    <td>
+                        <mat-form-field appearance="fill">
+                            <mat-label>FirstName</mat-label>
+                            <input type="text" name="firstname" ngModel matInput>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field appearance="fill">
+                            <mat-label>MiddleName</mat-label>
+                            <input type="text" name="middlename" ngModel matInput>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field appearance="fill">
+                            <mat-label>LastName</mat-label>
+                            <input type="text" name="lastname" ngModel matInput>
+                        </mat-form-field>
+                    </td>
                 </tr>
-            </thead>
-            <tr>
-                <td>
-                    <mat-form-field appearance="fill">
-                        <mat-label>FirstName</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                </td>
-                <td>
-                    <mat-form-field appearance="fill">
-                        <mat-label>MiddleName</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                </td>
-                <td>
-                    <mat-form-field appearance="fill">
-                        <mat-label>LastName</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <mat-form-field appearance="fill">
-                        <mat-label>Email</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                </td>
-            </tr>
-        </table>
+                <tr>
+                    <td>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Email</mat-label>
+                            <input type="text" name="email" ngModel matInput>
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <div class="fab-wrapper">
+                    <button type="submit" (click)="onSubmit(userPost.value)"mat-button mat-fab>
+                        <mat-icon>Save</mat-icon>
+                    </button>
+                    <button class="Cancel" mat-button mat-fab>
+                        <mat-icon>Cancel</mat-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</form>

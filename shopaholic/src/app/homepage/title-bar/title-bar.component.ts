@@ -17,14 +17,15 @@ export class TitlebarComponent implements OnInit{
 
   }
 
-  search(){
-
+  search(a){
+    console.log(a);
   }
+
   sign_up(){
 
   }
   log_out(){
-    
+    alert("You have been logout");
   }
 
 }

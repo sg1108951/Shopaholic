@@ -17,6 +17,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -41,7 +43,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatInputModule,
     MatTabsModule,
     MatFormFieldModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    FormsModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

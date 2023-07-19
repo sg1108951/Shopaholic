@@ -10,4 +10,9 @@ import { Component } from '@angular/core';
     firstname : string = 'Shubham';
     count : number = 3;
 
+    onSubmit(data){
+      console.log(data);
+      
+    }
+
   }

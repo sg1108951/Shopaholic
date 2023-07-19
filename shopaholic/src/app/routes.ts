@@ -5,5 +5,5 @@ import{ RegisterComponent } from './homepage/register/register.component';
 
 export const allAppRoutes: Routes = [
     { path: '', component: HomepageComponent },
-    {path: 'Register', component: RegisterComponent}
+    {path: 'NewRegister', component: RegisterComponent}
   ];
